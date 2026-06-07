@@ -3,7 +3,7 @@ import { Project } from "@/types/project";
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "Azalio Exam Portal",
+    title: "#365 Exam Portal",
     url: "https://exam-portal.365itsolution.com/",
     category: "enterprise",
     tagline: "Smart recruitment & proctored assessments",

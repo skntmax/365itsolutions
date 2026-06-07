@@ -10,6 +10,17 @@ const nextConfig = {
       },
     ],
   },
+
+  async redirects() {
+  return [
+    {
+      source: '/:path*',
+      destination: 'https://365itsolution.com/:path*',
+      permanent: true,
+    },
+  ]
+}
+
 };
 
 module.exports = nextConfig;

@@ -1,20 +1,16 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
-import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
-import Video from "@/components/Video";
+import Leadership from "@/components/Leadership";
+import Projects from "@/components/Projects";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
-  // other metadata
+  title: "365 IT Solutions — Production-Ready IT Products & Software Development",
+  description:
+    "We build scalable web apps, mobile platforms, EdTech solutions, and government eOffice systems. View our live portfolio including Azalio Exam Portal, SwiftCab, CodeXCave, and more.",
 };
 
 export default function Home() {
@@ -23,13 +19,9 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <Video />
-      <Brands />
+      <Projects />
+      <Leadership />
       <AboutSectionOne />
-      <AboutSectionTwo />
-      <Testimonials />
-      <Pricing />
-      <Blog />
       <Contact />
     </>
   );

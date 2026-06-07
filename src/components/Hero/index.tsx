@@ -11,27 +11,42 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
+                <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
+                  365 IT Solutions — Trusted by Enterprise & Government
+                </span>
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Free and Open-Source Next.js Template for Startup & SaaS
+                  We Build Production-Ready IT Products That Scale
                 </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+                <p className="mb-8 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                  From proctored exam portals and ride-hailing apps to
+                  government e-office systems — we deliver end-to-end software
+                  solutions that real organizations depend on. Your vision,
+                  engineered to production.
                 </p>
+                <div className="mb-10 flex flex-wrap items-center justify-center gap-3">
+                  {["Web & Mobile Apps", "SaaS Platforms", "Govt. eOffice", "EdTech"].map(
+                    (tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-md border border-stroke px-3 py-1.5 text-sm font-medium text-black dark:border-stroke-dark dark:text-white"
+                      >
+                        {tag}
+                      </span>
+                    ),
+                  )}
+                </div>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
+                    href="#projects"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Get Pro
+                    View Our Work
                   </Link>
                   <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                    href="#contact"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Star on GitHub
+                    Hire Us for Your Project
                   </Link>
                 </div>
               </div>

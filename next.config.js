@@ -16,7 +16,8 @@ const nextConfig = {
     {
       source: '/:path*',
       destination: 'https://365itsolution.com/:path*',
-      permanent: false,
+      permanent: true,
+      
     },
   ]
 }

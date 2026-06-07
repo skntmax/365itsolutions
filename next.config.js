@@ -11,16 +11,15 @@ const nextConfig = {
     ],
   },
 
-  async redirects() {
-  return [
-    {
-      source: '/:path*',
-      destination: 'https://365itsolution.com/:path*',
-      permanent: true,
-      
-    },
-  ]
-}
+//   async redirects() {
+//   return [
+//     {
+//       source: '/:path*',
+//       destination: 'https://365itsolution.com/:path*',
+//       // permanent: true,
+//     },
+//   ]
+// }
 
 };
 

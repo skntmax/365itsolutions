@@ -200,7 +200,7 @@ const getLogoBadge = (item: string) => {
 
 const Leadership = () => {
   return (
-    <section id="leadership" className="py-16 md:py-20 lg:py-28">
+    <section id="leadership" className="py-14 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Leadership & Delivery Ownership"
@@ -208,9 +208,9 @@ const Leadership = () => {
           center
         />
 
-        <div className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div className="rounded-xl border border-stroke/70 bg-white p-7 shadow-one transition-all duration-300 hover:-translate-y-1 hover:shadow-two dark:border-stroke-dark dark:bg-dark">
-            <div className="mb-5 h-20 w-20 overflow-hidden rounded-full border border-stroke/70 dark:border-stroke-dark">
+        <div className="mb-10 grid grid-cols-1 gap-5 md:mb-12 md:grid-cols-2 md:gap-6">
+          <div className="rounded-xl border border-stroke/70 bg-white p-5 shadow-one transition-all duration-300 hover:-translate-y-1 hover:shadow-two dark:border-stroke-dark dark:bg-dark sm:p-7">
+            <div className="mb-4 h-16 w-16 overflow-hidden rounded-full border border-stroke/70 dark:border-stroke-dark sm:mb-5 sm:h-20 sm:w-20">
               <Image
                 src="/images/team/shashi-kant.png"
                 alt="Shashi Kant profile photo"
@@ -222,7 +222,7 @@ const Leadership = () => {
             <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-primary">
               Founder
             </p>
-            <h3 className="mb-2 text-2xl font-bold text-black dark:text-white">
+            <h3 className="mb-2 text-xl font-bold text-black dark:text-white sm:text-2xl">
               Shashi Kant
             </h3>
             <p className="mb-5 text-base leading-relaxed text-body-color dark:text-body-color-dark">
@@ -239,8 +239,8 @@ const Leadership = () => {
             </a>
           </div>
 
-          <div className="rounded-xl border border-stroke/70 bg-white p-7 shadow-one transition-all duration-300 hover:-translate-y-1 hover:shadow-two dark:border-stroke-dark dark:bg-dark">
-            <div className="mb-5 h-20 w-20 overflow-hidden rounded-full border border-stroke/70 dark:border-stroke-dark">
+          <div className="rounded-xl border border-stroke/70 bg-white p-5 shadow-one transition-all duration-300 hover:-translate-y-1 hover:shadow-two dark:border-stroke-dark dark:bg-dark sm:p-7">
+            <div className="mb-4 h-16 w-16 overflow-hidden rounded-full border border-stroke/70 dark:border-stroke-dark sm:mb-5 sm:h-20 sm:w-20">
               <Image
                 src="/images/team/paras.png"
                 alt="Paras profile photo"
@@ -252,7 +252,7 @@ const Leadership = () => {
             <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-primary">
               Cofounder
             </p>
-            <h3 className="mb-2 text-2xl font-bold text-black dark:text-white">
+            <h3 className="mb-2 text-xl font-bold text-black dark:text-white sm:text-2xl">
               Paras
             </h3>
             <p className="mb-5 text-base leading-relaxed text-body-color dark:text-body-color-dark">
@@ -274,8 +274,8 @@ const Leadership = () => {
           </div>
         </div>
 
-        <div className="mb-12 rounded-xl border border-stroke/70 bg-white p-7 shadow-one dark:border-stroke-dark dark:bg-dark">
-          <h3 className="mb-3 text-2xl font-bold text-black dark:text-white">
+        <div className="mb-10 rounded-xl border border-stroke/70 bg-white p-5 shadow-one dark:border-stroke-dark dark:bg-dark sm:mb-12 sm:p-7">
+          <h3 className="mb-3 text-xl font-bold text-black dark:text-white sm:text-2xl">
             Senior Engineering Team
           </h3>
           <p className="mb-6 text-base leading-relaxed text-body-color dark:text-body-color-dark">
@@ -299,8 +299,8 @@ const Leadership = () => {
           </div>
         </div>
 
-        <div className="mb-12 rounded-xl border border-stroke/60 bg-gray-light p-7 dark:border-stroke-dark dark:bg-bg-color-dark">
-          <h3 className="mb-5 text-2xl font-bold text-black dark:text-white">
+        <div className="mb-10 rounded-xl border border-stroke/60 bg-gray-light p-5 dark:border-stroke-dark dark:bg-bg-color-dark sm:mb-12 sm:p-7">
+          <h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl">
             Full Stack Resume (Concise Version)
           </h3>
           <div className="flex flex-wrap gap-3">
@@ -309,7 +309,7 @@ const Leadership = () => {
               return (
                 <span
                   key={tech}
-                  className="inline-flex items-center gap-2 rounded-md border border-stroke bg-white px-3 py-1.5 text-sm font-medium text-black transition-all duration-200 hover:border-primary/40 hover:shadow-one dark:border-stroke-dark dark:bg-dark dark:text-white"
+                  className="inline-flex w-full items-center gap-2 rounded-md border border-stroke bg-white px-3 py-1.5 text-sm font-medium text-black transition-all duration-200 hover:border-primary/40 hover:shadow-one dark:border-stroke-dark dark:bg-dark dark:text-white sm:w-auto"
                 >
                   <span
                     className={`inline-flex h-5 w-5 items-center justify-center rounded text-[10px] font-bold ${logo.tone}`}
@@ -323,13 +323,13 @@ const Leadership = () => {
           </div>
         </div>
 
-        <div className="rounded-xl border border-stroke/60 bg-gray-light p-7 dark:border-stroke-dark dark:bg-bg-color-dark">
-          <h3 className="mb-6 text-2xl font-bold text-black dark:text-white">
+        <div className="rounded-xl border border-stroke/60 bg-gray-light p-5 dark:border-stroke-dark dark:bg-bg-color-dark sm:p-7">
+          <h3 className="mb-6 text-xl font-bold text-black dark:text-white sm:text-2xl">
             Complete Technology Capability Matrix
           </h3>
           <div className="space-y-6">
             {skillGroups.map((group) => (
-              <div key={group.title} className="rounded-lg bg-white/70 p-4 dark:bg-dark/50">
+              <div key={group.title} className="rounded-lg bg-white/70 p-3 dark:bg-dark/50 sm:p-4">
                 <h4 className="mb-3 text-lg font-semibold text-black dark:text-white">
                   {group.title}
                 </h4>
@@ -339,7 +339,7 @@ const Leadership = () => {
                     return (
                       <span
                         key={item}
-                        className="inline-flex items-center gap-2 rounded-md border border-stroke bg-white px-3 py-1.5 text-sm font-medium text-black transition-all duration-200 hover:border-primary/40 hover:shadow-one dark:border-stroke-dark dark:bg-dark dark:text-white"
+                        className="inline-flex w-full items-center gap-2 rounded-md border border-stroke bg-white px-3 py-1.5 text-sm font-medium text-black transition-all duration-200 hover:border-primary/40 hover:shadow-one dark:border-stroke-dark dark:bg-dark dark:text-white sm:w-auto"
                       >
                         <span
                           className={`inline-flex h-5 w-5 items-center justify-center rounded text-[10px] font-bold ${logo.tone}`}

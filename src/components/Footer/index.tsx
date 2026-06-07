@@ -14,14 +14,14 @@ const Footer = () => {
                   <Image
                     src="/images/logo/logo-2.svg"
                     alt="logo"
-                    className="w-full dark:hidden"
+                    className="h-10 w-auto dark:hidden sm:h-12"
                     width={140}
                     height={30}
                   />
                   <Image
                     src="/images/logo/logo.svg"
                     alt="logo"
-                    className="hidden w-full dark:block"
+                    className="hidden h-10 w-auto dark:block sm:h-12"
                     width={140}
                     height={30}
                   />

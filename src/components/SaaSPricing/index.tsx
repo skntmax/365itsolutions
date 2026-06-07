@@ -53,7 +53,7 @@ const plans = [
 
 const SaaSPricing = () => {
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="pricing" className="relative z-10 py-14 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="SaaS Pricing Plans for Current Market"
@@ -63,28 +63,28 @@ const SaaSPricing = () => {
         />
 
         <div className="mb-8 text-center">
-          <span className="inline-flex rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">
+          <span className="inline-flex max-w-full rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-center text-xs font-semibold text-primary sm:text-sm">
             Flexible billing available: monthly, quarterly, and milestone-based
           </span>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-8">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative rounded-xl border bg-white p-7 shadow-one transition-all duration-300 hover:-translate-y-1 hover:shadow-two dark:bg-dark ${
+              className={`relative rounded-xl border bg-white p-5 shadow-one transition-all duration-300 hover:-translate-y-1 hover:shadow-two dark:bg-dark sm:p-7 ${
                 plan.featured
                   ? "border-primary shadow-feature-2 dark:border-primary"
                   : "border-stroke/70 dark:border-stroke-dark"
               }`}
             >
               {plan.featured && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-4 py-1 text-xs font-semibold text-white">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-1 text-[11px] font-semibold text-white sm:px-4 sm:text-xs">
                   Recommended
                 </span>
               )}
 
-              <h3 className="mb-2 text-2xl font-bold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-bold text-black dark:text-white sm:text-2xl">
                 {plan.name}
               </h3>
               <p className="mb-5 text-sm leading-relaxed text-body-color dark:text-body-color-dark">
